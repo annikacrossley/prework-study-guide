@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -31,6 +32,20 @@
       </section>
    
       <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>inline CSS - style an element in the HTML file; quick and permanent; less flexible</li>
+          <li>uses "style="</li>
+          <li>internal style sheet contains CSS rules in the head section of the HTML; applies to all tagged page elements (ex, h1)</li>
+          <li>external CSS style sheet is most common way to style a webpage; allows us to keep CSS rules in a separate file, makes design changes easier</li>
+          <li>link file using <link> in the HTML's <head> after final <meta> element: <link rel="stylesheet" href="./assets/style.css"></li>
+          <li><link> creates connection to external file; rel specifies the relationship between current and linked documents; href specifies the URL location of the external file</li>
+          <li>CSS Rule Structure: selector (ex: div); div {property: value; property: value;}; declaration = propert (ex: color): value (ex: blue); wild card symbol (*) applies the rule to all the elements visible on the page</li>
+          <li>to combine two selectors into a single CSS rule, use a comma (ex: header, footer) rather than repeating it (Do Not Repeat Yourself aka DRY code)</li>
+          <li>cd assets; touch style.css; git status; git checkout main; git checkout -b feature/add-css; VS CODE - open new style.css style sheet; add code in style.css</li>
+          <li>Add Style Using Class Attributes: designate a class attribute as the selector (class selector; ex: card); adds styles to certain elements, but not all</li>
+          <li>.card designates this as a class selector; review HTML to ensure the selector is assigned to the correct elements</li>
+        </ul>
    
       </section>
    
@@ -39,8 +54,17 @@
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>add -A: commits all files in the working branch, stages the changes.</li>
-          <li>-m: associates a message with the commit.</li>
+          <li>Once you add your code, it is time to save to GitHub. Make sure you are on the correct branch.</li>
+          <li>Stage the changes: git add -A commits all files in the working branch, stages the changes.</li>
+          <li>Commit to the repository: git commit -m; -m associates a message with the commit.</li>
+          <li>Make sure current branch is up to date: git pull origin main</li>
+          <li>Push all changes: git push origin feature/add-css</li>
+          <li>Navigate to the repository on GitHub. Click the Pull Requests tabe and then New pull request button.</li>
+          <Li>Make sure the base branch is main and comparison branch is your feature branch. Add a title and short description of the changes.</Li>
+          <li>Click Create pull request, the Merge pull request, then confirm the merge request.</li>
+          <li>Close the GitHub issue in the Issues tab.</li>
+          <li>Navigate to main branch to update our local main branch: git checkout main</li>
+          <li>Pull the remote main branch to the local main branch: git pull origin main</li>
         </ul>
    
       </section>
