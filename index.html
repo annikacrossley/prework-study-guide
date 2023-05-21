@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -70,12 +71,45 @@
       </section>
    
       <section class="card" id="javascript-section">
-   
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Allows users to interact with websites - first add a variable to a JS file; second add conditional logic using JS; third incorporate arrays and for loops; fourth complete the Git flow</li>
+          <li>var = variable; var name = "string, of, topics" (all strings are surrounding by quotation marks); access by using the variable's name</li>
+          <li>console.log(var name) adds the console.log method to the file; the method can be used to output a message to the web console by adding an argument</li>
+          <li>Connect the script.js file to the index.html file (similar to how we linked the CSS style sheet style.css); add a link element inside the body element</li>
+          <li>Need to use Chrome DevTools to see it in action (right click in the browser, select Inspect); go to Console tab - here we see the value of the variable aka console.log method in action</li>
+          <li>Control Flow: the order in which a computer executes code in a script; order is very important</li>
+          <li>Using conditional statements and loops control the code's execution</li>
+          <li>If statements: code with only execute IF the statement meets a condition or is true</li>
+          <li>Falsy: 0, -0, On, "", undefined, null, or NaN; or Boolean value of false</li>
+          <li>Truthy: all other values, including Boolean value of true</li>
+          <li>Multiple conditions use else if. If the first condition is truthy, that code is executed. If the first condition is false, we move to the next else if option; if its truthy, it will be executed; if not, it will move on. </li>
+          <li>=== is the strict equality operator; checks if two values are equal and returns a Boolean result (true if equal, false if unequal)</li>
+          <li>Have to manually change the variable value to test different values - solved w/ an Array</li>
+          <li>Arrays: store a group of various data within one variable; can perform a task on multiple pieces of data at once</li>
+          <li>var variable-name = ["data", "more data". "three datas"]</li>
+          <li>Arrays can hold multiple types of data as well (strings, numbers, etc)</li>
+          <li>Need additional information - the location of the data item in the array, aka an index</li>
+          <li>Arrays are zero-indexed and sequential - the first item is 0, not 1.</li>
+          <li>If we only wanted to access "more data", we would use variable-name[1];</li>
+          <li>Log it in the console to see it in action console.log(variable-name[1]);</li>
+          <li>for Loop uses the pattern of index to perform a task on all items in an array; much more efficient</li>
+          <li>A console.log for loop can tell the computer to go through each piece of data in an array and log them to the cosnole until there are no data items left</li>
+          <li>Need to know the index and the array's length</li>
+          <li>Array length will tell the for loop how many times the code will run; find the array using the length property</li>
+          <li>There are three important statements: 1) starting point of the loop; declare variable x and give it a value of 0 (var x = 0;); 2) the condition tells the loop how many times to run; as long as variable x is less than the length of the array, the loop keeps running; x < array.length; ; 3) final statement allows the array to iterate over each item; we know an index increases by 1 each time; x++ is short for x+1; now when the code loops, it will increase by 1</li>
+          <li>Commenting out code: makes it inactive without deleting, in case you need it later. Put /* before and */ after the block of code</li>
+          <li>A function is a set of instructions that tells the computer how to perform a task; different from a for loop because it doesn't automatically run</li>
+          <li>A function's name is followed by parentheses: function hellowWorld()</li>
+          <li>The syntax is similar to if statements and for loops, with the code inside {  }</li>
+          <li>You have to call the function in order to run the code: type the name of the function into the console; add the function name() to the point in the code where you want the function to run.</li>
+        </ul>
       </section>
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
